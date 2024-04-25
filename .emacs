@@ -22,6 +22,9 @@
   :init
   (load-theme 'monokai t))
 
+(use-package rust-mode
+  :ensure t)
+
 (use-package projectile
   :ensure t
   :init
