@@ -20,7 +20,7 @@
 (use-package monokai-theme
   :ensure t
   :init
-  (load-theme 'monokai ))
+  (load-theme 'monokai t))
 
 (use-package projectile
   :ensure t
