@@ -22,6 +22,9 @@
   :init
   (load-theme 'monokai t))
 
+(use-package magit
+  :ensure t)
+
 (use-package multiple-cursors
   :ensure t
   :bind (("C-S-c C-S-c" . mc/edit-lines)
