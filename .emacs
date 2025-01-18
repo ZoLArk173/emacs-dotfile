@@ -18,9 +18,11 @@
 
 ;; Hooks for C
 (add-hook 'c-mode-hook 'display-line-numbers-mode)
+(add-hook 'c-mode-hook 'hs-minor-mode)
 
 ;; Hooks for C++
 (add-hook 'c++-mode-hook 'display-line-numbers-mode)
+(add-hook 'c++-mode-hook 'hs-minor-mode)
 
 (use-package monokai-theme
   :ensure t
