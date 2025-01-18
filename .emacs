@@ -15,7 +15,12 @@
 (ido-mode t)
 (ido-everywhere 1)
 (setq column-number-mode t)
-(global-display-line-numbers-mode)
+
+;; Hooks for C
+(add-hook 'c-mode-hook 'display-line-numbers-mode)
+
+;; Hooks for C++
+(add-hook 'c++-mode-hook 'display-line-numbers-mode)
 
 (use-package monokai-theme
   :ensure t
