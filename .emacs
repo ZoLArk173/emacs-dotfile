@@ -16,13 +16,11 @@
 (ido-everywhere 1)
 (setq column-number-mode t)
 
-;; Hooks for C
-(add-hook 'c-mode-hook 'display-line-numbers-mode)
-(add-hook 'c-mode-hook 'hs-minor-mode)
-
-;; Hooks for C++
-(add-hook 'c++-mode-hook 'display-line-numbers-mode)
-(add-hook 'c++-mode-hook 'hs-minor-mode)
+;; List of programming language hooks
+(dolist (hook '(c-mode-hook
+                c++-mode-hook))
+  (add-hook hook 'display-line-numbers-mode)
+  (add-hook hook 'hs-minor-mode))
 
 (use-package monokai-theme
   :ensure t
