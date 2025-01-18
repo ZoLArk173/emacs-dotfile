@@ -30,6 +30,13 @@
 (use-package magit
   :ensure t)
 
+(use-package avy
+  :ensure t
+  :bind
+  (("C-:" . avy-goto-char)
+   ("C-'" . avy-goto-word-1)
+   ("M-g f" . avy-goto-line)))
+
 (use-package multiple-cursors
   :ensure t
   :bind (("C-S-c C-S-c" . mc/edit-lines)
